@@ -79,15 +79,14 @@
 
 
 
-<meta name="description" content="结构型UML类图&amp;#8195;&amp;#8195;类图是分析业务概念的首选，可能是使用率最高的UML图。类有属性和操作。Attribute为属性，Operation为操作。如下为一个Person类图，表达了人的属性和拥有的行为。  &amp;#8195;&amp;#8195;而由于对象是类的实例化，因此对象图就是类图的实例化。 构件(组件)图&amp;#8195;&amp;#8195;件图就是用来描述软件内部物理组成的一种图。软件需求">
+<meta name="description" content="行为型UML一、状态机&amp;#8195;&amp;#8195;Finite state machine，第一次接触状态机是大学接触寄存器，关于一个自动贩卖机的实例。状态机是UML的行为型图之一，表示了在有限个状态以及在这些状态之间的转移和动作行为的数学模型。主要">
 <meta name="keywords" content="UML系列">
 <meta property="og:type" content="article">
 <meta property="og:title" content="UML">
 <meta property="og:url" content="http:&#x2F;&#x2F;yoursite.com&#x2F;2019&#x2F;11&#x2F;13&#x2F;UML&#x2F;index.html">
 <meta property="og:site_name" content="骑士王的基地港">
-<meta property="og:description" content="结构型UML类图&amp;#8195;&amp;#8195;类图是分析业务概念的首选，可能是使用率最高的UML图。类有属性和操作。Attribute为属性，Operation为操作。如下为一个Person类图，表达了人的属性和拥有的行为。  &amp;#8195;&amp;#8195;而由于对象是类的实例化，因此对象图就是类图的实例化。 构件(组件)图&amp;#8195;&amp;#8195;件图就是用来描述软件内部物理组成的一种图。软件需求">
+<meta property="og:description" content="行为型UML一、状态机&amp;#8195;&amp;#8195;Finite state machine，第一次接触状态机是大学接触寄存器，关于一个自动贩卖机的实例。状态机是UML的行为型图之一，表示了在有限个状态以及在这些状态之间的转移和动作行为的数学模型。主要">
 <meta property="og:locale" content="zh-Hans">
-<meta property="og:image" content="http:&#x2F;&#x2F;yoursite.com&#x2F;UML&#x2F;2.jpg">
 <meta property="og:image" content="http:&#x2F;&#x2F;yoursite.com&#x2F;UML&#x2F;1.png">
 <meta property="og:image" content="https:&#x2F;&#x2F;upload-images.jianshu.io&#x2F;upload_images&#x2F;15411746-5817732a036f197c.png">
 <meta property="og:image" content="https:&#x2F;&#x2F;upload-images.jianshu.io&#x2F;upload_images&#x2F;15411746-dca703e1df4ec26a.png?imageMogr2&#x2F;auto-orient&#x2F;strip%7CimageView2&#x2F;2&#x2F;format&#x2F;webp">
@@ -96,9 +95,17 @@
 <meta property="og:image" content="https:&#x2F;&#x2F;upload-images.jianshu.io&#x2F;upload_images&#x2F;15411746-11a27379c93e5f50.png?imageMogr2&#x2F;auto-orient&#x2F;strip%7CimageView2&#x2F;2&#x2F;w&#x2F;166&#x2F;format&#x2F;webp">
 <meta property="og:image" content="http:&#x2F;&#x2F;yoursite.com&#x2F;UML&#x2F;3.jpg">
 <meta property="og:image" content="http:&#x2F;&#x2F;yoursite.com&#x2F;UML&#x2F;4.jpg">
-<meta property="og:updated_time" content="2019-11-14T15:24:01.269Z">
+<meta property="og:image" content="http:&#x2F;&#x2F;yoursite.com&#x2F;UML&#x2F;5.png">
+<meta property="og:image" content="http:&#x2F;&#x2F;yoursite.com&#x2F;UML&#x2F;6.png">
+<meta property="og:image" content="http:&#x2F;&#x2F;yoursite.com&#x2F;UML&#x2F;7.png">
+<meta property="og:image" content="http:&#x2F;&#x2F;yoursite.com&#x2F;UML&#x2F;8.png">
+<meta property="og:image" content="http:&#x2F;&#x2F;yoursite.com&#x2F;UML&#x2F;9.png">
+<meta property="og:image" content="http:&#x2F;&#x2F;yoursite.com&#x2F;UML&#x2F;10.png">
+<meta property="og:image" content="http:&#x2F;&#x2F;yoursite.com&#x2F;UML&#x2F;11.png">
+<meta property="og:image" content="c:&#x2F;hexo&#x2F;blog&#x2F;source&#x2F;_posts&#x2F;UML&#x2F;2.jpg">
+<meta property="og:updated_time" content="2019-11-15T13:56:11.435Z">
 <meta name="twitter:card" content="summary">
-<meta name="twitter:image" content="http:&#x2F;&#x2F;yoursite.com&#x2F;UML&#x2F;2.jpg">
+<meta name="twitter:image" content="http:&#x2F;&#x2F;yoursite.com&#x2F;UML&#x2F;1.png">
 
 
 
@@ -370,12 +377,8 @@
       
 
       
-        <h3 id="结构型UML"><a href="#结构型UML" class="headerlink" title="结构型UML"></a>结构型UML</h3><h5 id="类图"><a href="#类图" class="headerlink" title="类图"></a>类图</h5><p>&#8195;&#8195;类图是分析业务概念的首选，可能是使用率最高的UML图。类有属性和操作。Attribute为属性，Operation为操作。如下为一个Person类图，表达了人的属性和拥有的行为。</p>
-<p><img src="/UML/2.jpg" alt=""></p>
-<p>&#8195;&#8195;而由于对象是类的实例化，因此对象图就是类图的实例化。</p>
-<h5 id="构件-组件-图"><a href="#构件-组件-图" class="headerlink" title="构件(组件)图"></a>构件(组件)图</h5><p>&#8195;&#8195;件图就是用来描述软件内部物理组成的一种图。软件需求分析工作中，需要用到构件图的情况不是很多。可能会用到的场景：待开发的系统需要与第三方的系统、原有系统、某些老系统等交互，这时可用构件图描述交互要求。</p>
-<h3 id="行为型UML"><a href="#行为型UML" class="headerlink" title="行为型UML"></a>行为型UML</h3><h5 id="状态机"><a href="#状态机" class="headerlink" title="状态机"></a>状态机</h5><p><img src="/UML/1.png" alt=""><br>&#8195;&#8195;Finite state machine，第一次接触状态机是大学接触寄存器，关于一个自动贩卖机的实例。状态机是UML的行为型图之一，表示了在有限个状态以及在这些状态之间的转移和动作行为的数学模型。主要<a id="more"></a>作用是描述对象在它的生命周期内所经历的状态序列，以及如何响应来自外界的各种事件。其被广泛用于建模应用行为、硬件电路系统设计、软件工程，编译器、网络协议、和计算与语言的研究。基本元素构成：<br>1.起始<br>2.现态<br>3.动作：动作不是必需的，当条件满足后，也可以不执行任何动作，直接迁移到新状态。<br>4.条件：当一个条件被满足，将会触发一个动作，或者执行一次状态的迁移。<br>5.次态(目标状态)：“次态”一旦被激活，就转变成新的“现态”了。<br>6.结束</p>
-<h5 id="活动图"><a href="#活动图" class="headerlink" title="活动图"></a>活动图</h5><p>活动图描述了一次行为活动的流程，主要强调了行为活动的顺序和条件控制。</p>
+        <h3 id="行为型UML"><a href="#行为型UML" class="headerlink" title="行为型UML"></a>行为型UML</h3><h5 id="一、状态机"><a href="#一、状态机" class="headerlink" title="一、状态机"></a>一、状态机</h5><p><img src="/UML/1.png" alt=""><br>&#8195;&#8195;Finite state machine，第一次接触状态机是大学接触寄存器，关于一个自动贩卖机的实例。状态机是UML的行为型图之一，表示了在有限个状态以及在这些状态之间的转移和动作行为的数学模型。主要<a id="more"></a>作用是描述对象在它的生命周期内所经历的状态序列，以及如何响应来自外界的各种事件。其被广泛用于建模应用行为、硬件电路系统设计、软件工程，编译器、网络协议、和计算与语言的研究。基本元素构成：<br>1.起始<br>2.现态<br>3.动作：动作不是必需的，当条件满足后，也可以不执行任何动作，直接迁移到新状态。<br>4.条件：当一个条件被满足，将会触发一个动作，或者执行一次状态的迁移。<br>5.次态(目标状态)：“次态”一旦被激活，就转变成新的“现态”了。<br>6.结束</p>
+<h5 id="二、活动图"><a href="#二、活动图" class="headerlink" title="二、活动图"></a>二、活动图</h5><p>活动图描述了一次行为活动的流程，主要强调了行为活动的顺序和条件控制。</p>
 <p>1.开始：黑实心圆+发出箭头<br>2.结束：外圆内黑实心圆+接受箭头<br>3.动作：圆角矩形<br>4.控制流：链接活动<br><img src="https://upload-images.jianshu.io/upload_images/15411746-5817732a036f197c.png" alt=""><br>5.决策判断：平行四边形<br>6.合并：任意一个节点到达该点都继续往下走，不管其他分支。<br><img src="https://upload-images.jianshu.io/upload_images/15411746-dca703e1df4ec26a.png?imageMogr2/auto-orient/strip%7CimageView2/2/format/webp" alt=""><br>7.分岔汇合：所有分支都到该点时候才继续往下走，类似CountDownLatch.await后在继续往下走<br><img src="https://upload-images.jianshu.io/upload_images/15411746-b785af278e87b524.png?imageMogr2/auto-orient/strip%7CimageView2/2/format/webp" alt=""><br>8.分流：类似fork多个线程执行放入线程池执行<br><img src="https://upload-images.jianshu.io/upload_images/15411746-9a4859060dbe5cf6.png?imageMogr2/auto-orient/strip%7CimageView2/2/format/webp" alt=""><br>9.接收信号：一般意指脑意识。<br><img src="https://upload-images.jianshu.io/upload_images/15411746-11a27379c93e5f50.png?imageMogr2/auto-orient/strip%7CimageView2/2/w/166/format/webp" alt=""></p>
 <p>电商购物的实例解析：</p>
 <p><img src="/UML/3.jpg" alt=""></p>
@@ -383,6 +386,34 @@
 <h6 id="泳道图——swimlanes"><a href="#泳道图——swimlanes" class="headerlink" title="泳道图——swimlanes"></a>泳道图——swimlanes</h6><p>是活动图模型中存在多个对象时的特殊变体，分水平和垂直。激活试用产品的实例解析：</p>
 <p><img src="/UML/4.jpg" alt=""></p>
 <p>让我们开始，customer请求激活自己正在使用的试用期产品（估计试用期过了，不能使用了），然后顾客服务对象通过fork开启两个流程，一个流程是让Order Management创建产品订单，一个是让用户产生C2V文件。然后Customer Service在 join 处等待两者完成，这里都完成在拿着产品秘钥和C2v文件去激活产品，通过email等把文件传递给用户，用户拿到文件既可以激活，至此活动结束。</p>
+<h5 id="三、用例图"><a href="#三、用例图" class="headerlink" title="三、用例图"></a>三、用例图</h5><p>用例图表达的是什么角色通过软件系统能做什么事情，我们可以使用用例图系统地表达软件系统的绝大部分需求。角色&amp;&amp;系统&amp;&amp;功能</p>
+<p><img src="/UML/5.png" alt=""></p>
+<h5 id="四、时序图"><a href="#四、时序图" class="headerlink" title="四、时序图"></a>四、时序图</h5><p><img src="/UML/6.png" alt=""></p>
+<ul>
+<li>虚线：生命线，标示一个对象存在的生命周期，两条生命线中间通过消息连接起来</li>
+<li>方框：对象</li>
+<li>消息：用于对象间传递信息，可分为：同步消息，异步消息、返回消息、自关联消息。</li>
+</ul>
+<p>1.同步消息：发送消息的对象在发送消息后会挂住，等消息接受对象接受消息返回后才会解除挂住的状态继续自己的工作。<br>2.异步消息：发送消息的对象在发送消息后会继续自己的工作，而不等消息接受对象接受消息返回。<br>3.返回消息：标示发送消息后返回的动作<br>4.自关联消息：一个对象内自调用的情况。</p>
+<p>进阶：消息发送的条件限制</p>
+<ul>
+<li>loop：标示for<br><img src="/UML/7.png" alt=""></li>
+</ul>
+<p>1.当没有指定循环边界默认范围为[0,无穷大]<br>2.如果只指定了一个值，那么默认执行该值次数。loop 10<br>3.指定了循环边界,则最少执行最小值值，最多执行最大值次数。loop(10,15)<br>4.实现dowhile方式，至少执行一次,如果size&lt;0则继续，直到size&gt;0退出循环.loop(10,15) [size&lt;15]</p>
+<ul>
+<li><p>alt：标示 if…then…else<br><img src="/UML/8.png" alt=""><br>条件判断，如果n&gt;0则执行agree函数否者执行reject函数</p>
+</li>
+<li><p>opt：标示Switch，当满足不同条件执行不同方法。<br><img src="/UML/9.png" alt=""></p>
+</li>
+<li><p>break：n=10时候执行save并退出循环。标示退出循环<br><img src="/UML/10.png" alt=""></p>
+</li>
+<li><p>par：同时进行，比如多个线程同时执行任务。标示同时发生<br><img src="/UML/11.png" alt=""></p>
+</li>
+</ul>
+<h5 id="五、顺序图"><a href="#五、顺序图" class="headerlink" title="五、顺序图"></a>五、顺序图</h5><h5 id="六、通信图"><a href="#六、通信图" class="headerlink" title="六、通信图"></a>六、通信图</h5><h3 id="结构型UML"><a href="#结构型UML" class="headerlink" title="结构型UML"></a>结构型UML</h3><h5 id="七、类图"><a href="#七、类图" class="headerlink" title="七、类图"></a>七、类图</h5><p>&#8195;&#8195;类图是分析业务概念的首选，可能是使用率最高的UML图。类有属性和操作。Attribute为属性，Operation为操作。如下为一个Person类图，表达了人的属性和拥有的行为。</p>
+<p><img src="C:/hexo/blog/source/_posts/UML/2.jpg" alt=""></p>
+<p>&#8195;&#8195;而由于对象是类的实例化，因此对象图就是类图的实例化。</p>
+<h5 id="八、构件-组件-图"><a href="#八、构件-组件-图" class="headerlink" title="八、构件(组件)图"></a>八、构件(组件)图</h5><p>&#8195;&#8195;组件图就是用来描述软件内部物理组成的一种图。软件需求分析工作中，需要用到构件图的情况不是很多。可能会用到的场景：待开发的系统需要与第三方的系统、原有系统、某些老系统等交互，这时可用构件图描述交互要求。</p>
 
       
     </div>
@@ -557,7 +588,7 @@
             
 
             
-              <div class="post-toc-content"><ol class="nav"><li class="nav-item nav-level-3"><a class="nav-link" href="#结构型UML"><span class="nav-number">1.</span> <span class="nav-text">结构型UML</span></a><ol class="nav-child"><li class="nav-item nav-level-5"><a class="nav-link" href="#类图"><span class="nav-number">1.0.1.</span> <span class="nav-text">类图</span></a></li><li class="nav-item nav-level-5"><a class="nav-link" href="#构件-组件-图"><span class="nav-number">1.0.2.</span> <span class="nav-text">构件(组件)图</span></a></li></ol></li></ol></li><li class="nav-item nav-level-3"><a class="nav-link" href="#行为型UML"><span class="nav-number">2.</span> <span class="nav-text">行为型UML</span></a><ol class="nav-child"><li class="nav-item nav-level-5"><a class="nav-link" href="#状态机"><span class="nav-number">2.0.1.</span> <span class="nav-text">状态机</span></a></li><li class="nav-item nav-level-5"><a class="nav-link" href="#活动图"><span class="nav-number">2.0.2.</span> <span class="nav-text">活动图</span></a><ol class="nav-child"><li class="nav-item nav-level-6"><a class="nav-link" href="#泳道图——swimlanes"><span class="nav-number">2.0.2.1.</span> <span class="nav-text">泳道图——swimlanes</span></a></li></ol></li></ol></li></ol></li></ol></div>
+              <div class="post-toc-content"><ol class="nav"><li class="nav-item nav-level-3"><a class="nav-link" href="#行为型UML"><span class="nav-number">1.</span> <span class="nav-text">行为型UML</span></a><ol class="nav-child"><li class="nav-item nav-level-5"><a class="nav-link" href="#一、状态机"><span class="nav-number">1.0.1.</span> <span class="nav-text">一、状态机</span></a></li><li class="nav-item nav-level-5"><a class="nav-link" href="#二、活动图"><span class="nav-number">1.0.2.</span> <span class="nav-text">二、活动图</span></a><ol class="nav-child"><li class="nav-item nav-level-6"><a class="nav-link" href="#泳道图——swimlanes"><span class="nav-number">1.0.2.1.</span> <span class="nav-text">泳道图——swimlanes</span></a></li></ol></li><li class="nav-item nav-level-5"><a class="nav-link" href="#三、用例图"><span class="nav-number">1.0.3.</span> <span class="nav-text">三、用例图</span></a></li><li class="nav-item nav-level-5"><a class="nav-link" href="#四、时序图"><span class="nav-number">1.0.4.</span> <span class="nav-text">四、时序图</span></a></li><li class="nav-item nav-level-5"><a class="nav-link" href="#五、顺序图"><span class="nav-number">1.0.5.</span> <span class="nav-text">五、顺序图</span></a></li><li class="nav-item nav-level-5"><a class="nav-link" href="#六、通信图"><span class="nav-number">1.0.6.</span> <span class="nav-text">六、通信图</span></a></li></ol></li></ol></li><li class="nav-item nav-level-3"><a class="nav-link" href="#结构型UML"><span class="nav-number">2.</span> <span class="nav-text">结构型UML</span></a><ol class="nav-child"><li class="nav-item nav-level-5"><a class="nav-link" href="#七、类图"><span class="nav-number">2.0.1.</span> <span class="nav-text">七、类图</span></a></li><li class="nav-item nav-level-5"><a class="nav-link" href="#八、构件-组件-图"><span class="nav-number">2.0.2.</span> <span class="nav-text">八、构件(组件)图</span></a></li></ol></li></ol></li></ol></div>
             
 
           </div>
